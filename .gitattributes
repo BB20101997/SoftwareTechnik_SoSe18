@@ -1,3 +1,11 @@
 * text=auto !eol
 Abgabe01/Aufgabe01/text.txt -text
+Abgabe01/Aufgabe02/G40S01A02/.classpath -text
+Abgabe01/Aufgabe02/G40S01A02/.project -text
+Abgabe01/Aufgabe02/G40S01A02/.settings/org.eclipse.jdt.core.prefs -text
+Abgabe01/Aufgabe02/G40S01A02/classpath-abs.txt -text
+Abgabe01/Aufgabe02/G40S01A02/classpath-rel.txt -text
+Abgabe01/Aufgabe02/G40S01A02/lib/commons-lang3-3.3.2.jar -text
+Abgabe01/Aufgabe02/G40S01A02/src/swt/Example.java -text
+Abgabe01/Aufgabe02/G40S01A02/swt-test.jar -text
 Abgabe01/Aufgabe02/text.txt -text
