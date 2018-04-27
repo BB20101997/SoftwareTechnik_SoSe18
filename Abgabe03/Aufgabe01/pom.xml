@@ -2,7 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>de.webtwob.st</groupId>
 	<artifactId>de.webtwob.st.a03</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<outputDirectory>jars</outputDirectory>
+					<archive>
+						<manifest>
+							<mainClass>abgabe03.caller.Caller</mainClass>
+						</manifest>
+					</archive>				
+				</configuration>
+			</plugin>
+		</plugins>
+		<sourceDirectory>src</sourceDirectory>
+    	<outputDirectory>classes</outputDirectory>
+    	<finalName>swt</finalName>
+    </build>
+    
 </project>
