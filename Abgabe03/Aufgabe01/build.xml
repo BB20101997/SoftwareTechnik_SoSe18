@@ -16,7 +16,7 @@
   <target name="dist" depends="compile">
     <jar jarfile="${jars}/swt.jar" basedir="${classes}">
 		<manifest>
-			<attribute name="Main"
+			<attribute name="Main-Class"
 			value="abgabe03.caller.Caller"/>
 		</manifest>
 	</jar>
