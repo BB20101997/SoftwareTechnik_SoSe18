@@ -1,0 +1,12 @@
+jars/swt.jar: classes/caller/Caller.class
+        cd classes; \
+        jar cfe ../jars/swt.jar caller.Caller *
+
+classes/callee/Callee.class: src/abgabe03/callee/Callee.java
+        javac src/abgabe03/callee/Callee.java -d classes -cp classes
+
+classes/caller/Caller.class: src/abgabe03/caller/Caller.java classes/callee/Callee.class
+        javac src/abgabe03/caller/Caller.java -d classes -cp classes
+
+run: jars/swt.jar
+        java -jar jars/swt.jar

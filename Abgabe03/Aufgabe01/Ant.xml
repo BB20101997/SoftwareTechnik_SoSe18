@@ -1,0 +1,23 @@
+<project name="swt" default="dist" basedir=".">
+
+  <property name="src" location="src"/>
+  <property name="jars" location="jars"/>
+  <property name="classes" location="classes"/>
+
+  <target name="compile">
+    <javac srcdir="${src}" destdir="${classes}"/>
+  </target>
+
+  <target name="dist" depends="compile">
+    <jar jarfile="${jars}/swt.jar" basedir="${classes}">
+		<manifest>
+			<attribute name="Main"
+			value="abgabe03.caller.Caller"/>
+		</manifest>
+	</jar>
+  </target>
+
+  <target name="run" depends="dist">
+	<java jar="${jars}/swt.jar" fork="true"/>
+  </target>
+</project>
