@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/AuthAPI.jar"/>
+	<classpathentry kind="lib" path="lib/AuthImpl.jar"/>
+	<classpathentry kind="lib" path="lib/CartAPI.jar"/>
+	<classpathentry kind="lib" path="lib/CartImpl.jar"/>
+	<classpathentry kind="lib" path="lib/PersistenceAPI.jar"/>
+	<classpathentry kind="lib" path="lib/PersistenceImpl.jar"/>
+	<classpathentry kind="lib" path="lib/UserAPI.jar"/>
+	<classpathentry kind="lib" path="lib/UserImpl.jar"/>
+	<classpathentry kind="lib" path="lib/WebstoreAPI.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
