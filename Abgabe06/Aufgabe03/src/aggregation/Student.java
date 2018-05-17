@@ -3,8 +3,6 @@ package aggregation;
 import java.util.ArrayList;
 import java.util.List;
 
-import both.Lecture;
-
 public class Student {
 	
 	private List<Lecture> lectures = new ArrayList<>();
@@ -23,6 +21,10 @@ public class Student {
 			lectures.remove(lecture);
 			lecture.removeStudent(this);
 		}
+	}
+
+	public boolean isInLecture(Lecture l) {
+		return lectures.contains(l);
 	}
 	
 	

@@ -1,18 +1,15 @@
-package both;
+package aggregation;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import aggregation.Student;
-import komposition.Session;
-
 public class Lecture {
 	
+	private 
 	List<Student> participants = new ArrayList<>();
-	private List<Session> sessions = new ArrayList<>();
 	
-	private boolean isValid() {
-		return participants.size()>=5&&!sessions.isEmpty();
+	public boolean isValid() {
+		return participants.size()>=5;
 	}
 	
 	public void addStudent(Student stu) {
@@ -28,17 +25,9 @@ public class Lecture {
 			student.removeLecture(this);
 		}
 	}
-	
-	public void addSession(Session ses) {
-		sessions.add(ses);
-	}
-	
-	public void removeSession(Session ses) {
-		sessions.remove(ses);
-	}
-	
-	public List<Session> getSessions(){
-		return Collections.unmodifiableList(sessions);
+
+	List<Student> getParticipants() {
+		return Collections.unmodifiableList(participants);
 	}
 	
 }
