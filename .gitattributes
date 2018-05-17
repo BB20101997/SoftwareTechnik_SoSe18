@@ -126,3 +126,6 @@ Abgabe06/Aufgabe02/src/Test.java -text
 Abgabe06/Aufgabe02/src/WebstoreImpl.java -text
 Abgabe06/Aufgabe03/.classpath -text
 Abgabe06/Aufgabe03/.project -text
+Abgabe06/Aufgabe03/src/aggregation/Student.java -text
+Abgabe06/Aufgabe03/src/both/Lecture.java -text
+Abgabe06/Aufgabe03/src/komposition/Session.java -text
