@@ -20,7 +20,7 @@ public class WebstoreImpl implements IWebstore{
 	public static IWebstore getWebstore() {
 		if(instance==null) {
 			synchronized (WebstoreImpl.class) {
-				//test again another threat may have done this allready
+				//test again another threat may have done this already
 				if(instance==null) {
 					instance = new WebstoreImpl();
 					AuthImpl.setPersistence(PersistenceImpl.getPersistence());
@@ -31,6 +31,8 @@ public class WebstoreImpl implements IWebstore{
 		}
 		return instance;
 	}
+	
+	private WebstoreImpl() {}
 
 	@Override
 	public void addItemToCart(String sessionID, String username, String item) throws AuthenticationException {
