@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="lib/FaultyWebstoreImpl.jar" sourcepath="lib/docs/Webstore-Javadoc">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/E:/Users/Bennet/git/SWT40/Abgabe11/Aufgabe01/G40S11A01/lib/docs/Webstore-Javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
